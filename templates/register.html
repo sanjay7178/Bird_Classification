@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login | Object Classification</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+
+    <body>
+        <div class="login">
+            <div class="heading">
+                <p>Register</p>
+            </div>
+
+            <div class="links">
+                <a href="{{ url_for('main') }}">Login</a>
+                <a href="#" class="active">Register</a>
+            </div>
+
+            <div class="form">
+                <form action="/register" method="post" enctype="multipart/form-data">
+                    <div class="form-body">
+                        <div class="form-input">
+                            <i class="fa fa-user"></i>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-input">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-input">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
