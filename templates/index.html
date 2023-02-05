@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 
 <html>
     <head>
@@ -31,4 +31,60 @@
         </div>
     </body>
 
+</html> -->
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.1/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <!-- include navbar.html -->
+    {% include 'navbar.html' %}
+
+
+      <!-- bread crumps  -->
+      <div class="text-sm breadcrumbs px-6">
+        <ul>
+          <li><a>Home</a></li> 
+          <!-- <li><a>Documents</a></li> 
+          <li>Add Document</li> -->
+        </ul>
+      </div>
+
+      <!-- file upload -->
+      <div class="flex">
+      </div>
+      <div class="flex items-center justify-center">
+        <!-- <input type="file" class="file-input w-full max-w-xs " alt="image"> -->
+        
+        <!-- The file input element -->
+        <input type="file" class="hidden" id="file-input">
+    
+        <!-- The drag and drop container -->
+        <label for="file-input" class="bg-primary rounded-lg p-8 cursor-pointer flex items-center justify-center">
+          <svg class="w-8 h-8 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+          </svg>
+          <span class="ml-2 text-lg text-gray-700">Drag and drop a file here or click to browse</span>
+        </label>
+
+    </div>
+
+    <!--include  footer  -->
+    {%include 'footer.html' %}
+
+
+</body>
 </html>
